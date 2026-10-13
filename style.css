@@ -9,11 +9,11 @@ body {
 }
 @font-face {
     font-family: "Cafe";
-    src: url(CafeVF.ttf);
+    src: url("CafeVF.ttf");
 }
 @font-face {
     font-family: "Compa";
-    src: url(Compagnon-Light.otf);
+    src: url("Compagnon-Light.otf");
 }
 .mugs{
 	font-family: Cafe;

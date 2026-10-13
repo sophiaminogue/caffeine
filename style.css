@@ -1,0 +1,181 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: lightblue;
+}
+@font-face {
+    font-family: "Cafe";
+    src: url(CafeVF.ttf);
+}
+@font-face {
+    font-family: "Compa";
+    src: url(Compagnon-Light.otf);
+}
+.mugs{
+	font-family: Cafe;
+	font-size: 100px;
+	position: absolute;
+	color:#1C3863;
+	animation: always alternate-reverse 1.5s infinite;
+}
+div.mugs:hover{
+	color:#cf679c;
+	cursor: pointer;
+}
+div.mugs:active{
+	animation-name: mug;
+	animation-duration: 10s;
+	animation-timing-function: ease-in;
+	animation-fill-mode: forwards;
+	cursor: pointer;
+	
+}
+.mugs2{
+	font-family: Cafe;
+	font-size: 100px;
+	position: absolute;
+	color:#4c71a9;
+	animation: always alternate 2s infinite;
+}
+div.mugs2:hover{
+	color:#cf679c;
+	cursor: pointer;
+}
+div.mugs2:active{
+	animation-name: mug;
+	animation-duration: 10s;
+	animation-timing-function: ease-in;
+	animation-fill-mode: forwards;
+	cursor: pointer;
+}
+.shelf{
+	width: 350px;
+	height: 10px;
+	background-color: #442003;
+	position: absolute;
+}
+.latte{
+	top: 380px;
+	left:80px;
+	border: 5px solid #442003;;
+	outline: 5px white dotted;
+	border-radius: 40px;
+	width:400px;
+	height:500px;
+	background-color: white;
+	position: absolute;
+}
+.plate{
+	top: 800px;
+	left: 600px;
+	width: 300px;
+	height: 60px;
+	border-radius: 50%;
+	background-color: #1C3863;
+	position: absolute;
+}
+.lattew{
+	top: 430px;
+	left:120px;
+	color: #cf679c;
+	font-family: "Compa";
+	font-size: 35px;
+	line-height: 35px;
+	position: absolute;
+	max-width: 250px;
+	animation: h2 1s alternate infinite;
+}
+.art{
+	color: #442003;
+	font-family: Cafe;
+	font-size: 500px;
+	position: absolute;
+	top: 330px;
+	left: 80px;
+}
+div.art:hover{
+	animation: rotate .8s normal infinite ease-in;
+	animation-delay: 0s;
+	transform-origin: 60% 50%;
+	cursor: pointer;
+}
+div.art:active{
+	color: #cf679c;
+	animation: art 3s normal;
+	animation-fill-mode: forwards;
+	cursor: grab;
+}
+.bread{
+	color: #442003;
+	font-family: Cafe;
+	font-size: 500px;
+	position: absolute;
+	top: 380px;
+	left: 880px;
+	transform:rotate(10deg);
+	animation: always alternate 2s infinite ease-in-out;
+}
+.decor{
+	position: absolute;
+	font-family: Cafe;
+	font-size: 150px;
+	animation-name: always;
+	animation-duration: .5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+}
+.h1{
+	position: absolute;
+	left:750px;
+	top: 150px;
+	font-family: "Compa";
+	font-size: 80px;
+	letter-spacing: 2px;
+	line-height: 80px;
+	max-width: 500px;
+	color: white;
+	text-shadow: 
+	3px 3px #1C3863,4px 4px #1C3863, 5px 5px #1C3863 ;
+	animation: h1 1s ease-in-out infinite alternate;
+}
+
+@keyframes always {
+	0% {font-variation-settings: "ANIM" 0}
+	100% {font-variation-settings: "ANIM" 100}
+}
+@keyframes rotate {
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(360deg);}
+}
+@keyframes art {
+	0% {font-variation-settings: "ANIM" -100}
+	100% {font-variation-settings: "ANIM" 100}
+}
+@keyframes h2 {
+	0% {transform: scale(1);
+	}
+	100% { transform: scale(1.05);
+	}
+}
+@media (max-width:1200px){
+	body{
+		background-color:lightcoral ;}
+}
+@keyframes h1 {
+0%{transform: rotate(0deg);
+}
+100%{transform: rotate(20deg);
+}
+}
+@keyframes mug {
+	0% {transform: scale(1); top: initial; left: initial;}
+	50% {transform: scale(5); top: 550px; left: 650px; font-variation-settings: "ANIM" -100;
+	}
+	100% {transform: scale(5); top: 550px; left: 650px; font-variation-settings: "ANIM" 100
+	}
+}

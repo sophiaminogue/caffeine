@@ -174,8 +174,8 @@ div.art:active{
 }
 @keyframes mug {
 	0% {transform: scale(1); top: initial; left: initial;}
-	50% {transform: scale(5); top: 550px; left: 650px; font-variation-settings: "ANIM" -100;
+	50% {transform: scale(5); top: 550px; left: 700px; font-variation-settings: "ANIM" -100;
 	}
-	100% {transform: scale(5); top: 550px; left: 650px; font-variation-settings: "ANIM" 100
+	100% {transform: scale(5); top: 550px; left: 700px; font-variation-settings: "ANIM" 100
 	}
 }
